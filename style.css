@@ -1,0 +1,66 @@
+
+body {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+#show {
+    position: fixed;
+    width: 100px;
+    height: 50px;
+
+}
+
+.form-popup .form-container #inputForm {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid black;
+    z-index: 9;
+}
+
+.form-container input[type=text] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.form-container .btn:hover {
+    opacity: 1;
+}
+
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+.cardContainer {
+    margin-top: 5em;
+    display: flex;
+    gap: 20px;
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    border: 1px solid plum;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1em;
+}
+

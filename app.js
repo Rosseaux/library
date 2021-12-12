@@ -1,4 +1,17 @@
 let myLibrary = [];
+let formButton = document.getElementById("show");
+var inputForm = document.getElementById("inputForm");
+inputForm.style.display = "none";
+
+formButton.addEventListener("click", openForm);
+
+function openForm() {
+    if (inputForm.style.display === "none")
+        inputForm.style.display = "block";
+    else
+        inputForm.style.display = "none";
+}
+
 
 function Book(title, author, pages, read) {
     this.title = title;
@@ -8,7 +21,7 @@ function Book(title, author, pages, read) {
 }
 let firstBook = new Book("Bill Murray's guide to ball play", "Bill Murray", 35, "read");
 let secondBook = new Book("Book test", "john dicky", 42, "not read");
-;
+
 
 Book.prototype.bookFile = function() {
     return `${this.title} by ${this.author}, ${this.pages} pages long, ${this.read}`;
@@ -23,3 +36,5 @@ function addBook(book) {
 
 addBook(firstBook);
 
+let cardOne = document.querySelector("#cardOne");
+cardOne.textContent = firstBook.bookFile();
