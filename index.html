@@ -8,32 +8,31 @@
     <title>Library</title>
 </head>
 <body>
-    <div class="cardContainer">
-        <div class="card" id="cardOne"></div>
-        <div class="card" id="cardTwo"></div>
-        <div class="card" id="cardThree"></div>
-        <div class="card" id="cardFour"></div>
-        <div class="card" id="cardFive"></div>
-        <div class="card" id="cardSix"></div>
-    </div>
     <button id="show">Enter a book</button>
+    <div class="cardContainer">
+        
+    </div>
+    
     <div class="form-popup" id="inputForm">
         <form class="form-container">
             <h1>Enter a Book</h1>
 
             <label for="title"><b>Title</b></label>
-            <input type="text" placeholder="Enter Title" name="title" required>
+            <input type="text" placeholder="Enter Title" name="title" required id="tInput">
 
             <label for="author"><b>Author</b></label>
-            <input type="text" placeholder="Enter Author" name="author" required>
+            <input type="text" placeholder="Enter Author" name="author" required id="aInput">
 
             <label for="pages"><b>Pages</b></label>
-            <input type="text" placeholder="Enter Pages" name="pages" required>
+            <input type="text" placeholder="Enter Pages" name="pages" required id="pInput">
 
             <label for="read"><b>Read?</b></label>
-            <input type="checkbox" name="read" required>
+            <label for="readYes">Yes</label>
+            <input type="checkbox" name="readYes" id="rInputYes">
+            <label for="readNo">No</label>
+            <input type="checkbox" name="readNo" id="rInputNo">
 
-            <button type="submit" class="btn">Submit</button>
+            <button type="button" class="btn" id="submit">Submit</button>
             <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
         </form>
         </div>
